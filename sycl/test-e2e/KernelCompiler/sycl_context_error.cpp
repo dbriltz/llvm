@@ -7,7 +7,7 @@
 //===----------------------------------------------------------------------===//
 
 // RUN: %{build} -o %t.out
-// RUN: %if hip %{ env SYCL_JIT_AMDGCN_PTX_TARGET_CPU=%{amd_arch} %} %{run-unfiltered-devices} %t.out
+// RUN: %{run-unfiltered-devices} %t.out
 
 #include <sycl/detail/core.hpp>
 #include <sycl/kernel_bundle.hpp>

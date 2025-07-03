@@ -9,7 +9,12 @@
 // REQUIRES: (opencl || level_zero)
 // REQUIRES: aspect-usm_shared_allocations
 
+<<<<<<< HEAD
 // Note linking is not supported on CUDA/HIP.
+=======
+// UNSUPPORTED: accelerator
+// UNSUPPORTED-INTENDED: while accelerator is AoT only, this cannot run there.
+>>>>>>> parent of 6d97d984558a ( [SYCL] RTC support for AMD and Nvidia GPU targets (#18918))
 
 // -- Test for the linking of two kernels with conflicting definitions of
 // -- kernels with the same name.
